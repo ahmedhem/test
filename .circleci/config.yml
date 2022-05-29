@@ -25,7 +25,7 @@ jobs:
       - run:
           name: merge from dev
           command: |
-            gir merge main && git push origin prod
+            git merge main && git push origin prod
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
