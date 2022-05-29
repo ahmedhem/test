@@ -22,7 +22,7 @@ jobs:
           name: checkout prod
           command: |
             npm install -g --silent gh-pages@2.0.1
-
+            gh-pages -d dist
 
 
 # Invoke jobs via workflows
