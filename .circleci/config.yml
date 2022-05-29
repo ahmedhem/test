@@ -21,7 +21,8 @@ jobs:
       - run:
           name: checkout prod
           command: |
-            git checkout prod &&             git merge  main 
+            npm install -g --silent gh-pages@2.0.1
+
 
 
 # Invoke jobs via workflows
