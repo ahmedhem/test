@@ -21,7 +21,7 @@ jobs:
       - run:
           name: checkout prod
           command: |
-            git checkout prod && git merge  main && git push https://${GITHUB_PERSONAL_TOKEN}@github.com/ahmedhem/test.git prod
+            git checkout prod && git merge  main && git commit https://${GITHUB_PERSONAL_TOKEN}@github.com/ahmedhem/test.git -m "Asdasd" && git push https://${GITHUB_PERSONAL_TOKEN}@github.com/ahmedhem/test.git prod
 
 
 # Invoke jobs via workflows
