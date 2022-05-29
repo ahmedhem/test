@@ -32,8 +32,4 @@ jobs:
 workflows:
   say-hello-workflow:
     jobs:
-      - deploy-the-project:
-          filters:
-            branches:
-              only:
-                - master
+      - deploy-the-project
