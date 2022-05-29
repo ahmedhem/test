@@ -21,11 +21,8 @@ jobs:
       - run:
           name: checkout prod
           command: |
-            git checkout prod
-      - run:
-          name: merge from dev
-          command: |
-            git merge  main 
+            git checkout prod &&             git merge  main 
+
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
