@@ -24,6 +24,8 @@ jobs:
             npm install -g --silent gh-pages@2.0.1
             git config --global user.email "f.ahmadhem@gmail.com"
             git config --global user.name "ahmedhem"
+            git config --global user.token ${GITHUB_PERSONAL_TOKEN}
+
             gh-pages -d dist
 
 
