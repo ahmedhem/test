@@ -21,8 +21,14 @@ jobs:
       - run:
           name: checkout prod
           command: |
-          git checkout prod  
+          git checkout prod
+      - run:
+          name: checkout prod
+          command: |
           git merge main
+      - run:
+          name: checkout prod
+          command: |
           git commit -m "adsasd"
           git push origin prod
 
