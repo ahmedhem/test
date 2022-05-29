@@ -25,7 +25,7 @@ jobs:
       - run:
           name: merge from dev
           command: |
-            git merge  main https://${GITHUB_PERSONAL_TOKEN}@github.com/ahmedhem/test.git
+            git merge  main 
 
 # Invoke jobs via workflows
 # See: https://circleci.com/docs/2.0/configuration-reference/#workflows
